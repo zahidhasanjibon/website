@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>a simple form</title>
+
+    </head>
+
+    <body>
+        <h1>course registration form</h1>
+        <form>
+            <fieldset>
+                <legend>personal information</legend>
+            <b> First Name :</b> <input type="text" name="textbox1"><br><br>
+            <b> Last Name  :</b> <input type="text" name="textbox2"><br><br>
+            <b> Password   :</b> <input type="password" name="pass"> <br><br>
+            <b> Gender     :</b> <input type="radio" name="gender" value="male"> Male
+                                 <input type="radio" name="gender" value="female"> Female
+                                 <input type="radio" name="gender" value="others"> Others <br><br>
+            <b>Religion    :</b> <input type="checkbox" name="c1" value="islam"> Islam
+                                 <input type="checkbox" name="c2" value="hindu"> Hindu
+                                 <input type="checkbox" name="c3" value="other"> Others<br>
+
+                </fieldset><br>
+            <b>Department :</b> 
+            <select name="department">
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>LLB</option>
+            </select><br>
+                <p>comment</p>
+                <textarea name="textarea" cols="40" rows="5">write here</textarea><br><br>
+                <datalist id="names">
+                    <option value="zahid">zahid</option>
+                    <option value="hasan">hasan</option>
+                    <OPTION value="jibon">jibon</OPTION>
+                </datalist>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="reset"><br><br>
+
+            <input type="text" list="names" placeholder="username" required pattern="[a-zA-Z0-9]+"><br>
+            <input type="email" placeholder="enter email"><br>
+            <input type="submit" value="sign up"><br>
+            
+        </form>
+
+    </body>
+    
+</html>
